@@ -66,7 +66,7 @@ export default function Home() {
         <div className="col-md-6">
           <form>
             <div className="form-group">
-              <label htmlFor="currentSalary">Current Salary (PKR):</label>
+            <label htmlFor="currentSalary" className="text-white font-weight-bold">Current Salary (PKR):</label>
               <input
                 type="number"
                 className="form-control"
@@ -77,7 +77,7 @@ export default function Home() {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="newExchangeRate">New Exchange Rate (1 USD to PKR):</label>
+            <label htmlFor="newExchangeRate" className="text-white font-weight-bold">New Exchange Rate (1 USD to PKR):</label>
               <input
                 type="number"
                 className="form-control"
@@ -95,7 +95,8 @@ export default function Home() {
               Calculate
             </button>
           </form>
-          <div className="result mt-4">
+          <div className="result mt-4 bg-light p-3 rounded">
+            <p className="font-weight-bold">Results:</p>
             <p>
               Initial Salary in PKR: <span id="initialSalaryResult">{initialSalaryResult}</span>
             </p>
