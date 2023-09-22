@@ -51,64 +51,67 @@ export default function Home() {
   };
 
   return (
-    <div className="container-fluid mt-5" style={{ backgroundImage: "url('/dollar.jpg')" }}>
-      <Head>
-        <title>Salary Calculator</title>
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        />
-        <link rel="stylesheet" href="styles.css" />
-      </Head>
+    <div className="container-fluid mt-5" style={{ backgroundImage: `url(${mypic})`, backgroundSize: 'cover' }}>
+    <Head>
+      <title>Salary Calculator</title>
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      />
+      <link rel="stylesheet" href="styles.css" />
+    </Head>
 
-      <h1 className="text-center text-white">Salary Calculator</h1>
-      <div className="row justify-content-center">
-        <div className="col-md-6">
-          <form>
-            <div className="form-group">
+    <h1 className="text-center text-white mb-4">Salary Calculator</h1>
+    <div className="row justify-content-center">
+      <div className="col-md-6">
+        <form>
+          <div className="form-group">
             <label htmlFor="currentSalary" className="text-white font-weight-bold">Current Salary (PKR):</label>
-              <input
-                type="number"
-                className="form-control"
-                id="currentSalary"
-                placeholder="Enter current salary"
-                value={currentSalary}
-                onChange={(e) => setCurrentSalary(e.target.value)}
-              />
-            </div>
-            <div className="form-group">
-            <label htmlFor="newExchangeRate" className="text-white font-weight-bold">New Exchange Rate (1 USD to PKR):</label>
-              <input
-                type="number"
-                className="form-control"
-                id="newExchangeRate"
-                placeholder="Enter new exchange rate"
-                value={newExchangeRate}
-                onChange={(e) => setNewExchangeRate(e.target.value)}
-              />
-            </div>
-            <button
-              type="button"
-              className="btn btn-primary btn-block"
-              onClick={calculateSalary}
-            >
-              Calculate
-            </button>
-          </form>
-          <div className="result mt-4 bg-light p-3 rounded">
-            <p className="font-weight-bold">Results:</p>
-            <p>
-              Initial Salary in PKR: <span id="initialSalaryResult">{initialSalaryResult}</span>
-            </p>
-            <p>
-              Adjusted Salary in PKR: <span id="adjustedSalaryResult">{adjustedSalaryResult}</span>
-            </p>
-            <p>
-              Increase in Value in PKR: <span id="increaseInValueResult">{increaseInValueResult}</span>
-            </p>
+            <input
+              type="number"
+              className="form-control"
+              id="currentSalary"
+              placeholder="Enter current salary"
+              value={currentSalary}
+              onChange={(e) => setCurrentSalary(e.target.value)}
+            />
           </div>
+          <div className="form-group">
+            <label htmlFor="newExchangeRate" className="text-white font-weight-bold">New Exchange Rate (1 USD to PKR):</label>
+            <input
+              type="number"
+              className="form-control"
+              id="newExchangeRate"
+              placeholder="Enter new exchange rate"
+              value={newExchangeRate}
+              onChange={(e) => setNewExchangeRate(e.target.value)}
+            />
+          </div>
+          <button
+            type="button"
+            className="btn btn-primary btn-block"
+            onClick={calculateSalary}
+          >
+            Calculate
+          </button>
+        </form>
+        <div className="result mt-4 p-3 rounded bg-light">
+          <p className="font-weight-bold">Results:</p>
+          <p>
+            Initial Salary in PKR: <span id="initialSalaryResult">{initialSalaryResult}</span>
+          </p>
+          <p>
+            Adjusted Salary in PKR: <span id="adjustedSalaryResult">{adjustedSalaryResult}</span>
+          </p>
+          <p>
+            Increase in Value in PKR: <span id="increaseInValueResult">{increaseInValueResult}</span>
+          </p>
+        </div>
+        <div className="signatures mt-4 text-right">
+          <p>Powered by Ammar and Awais</p>
         </div>
       </div>
     </div>
+  </div>
   );
 }
