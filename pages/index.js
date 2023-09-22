@@ -50,7 +50,7 @@ export default function Home() {
   };
 
   return (
-    <div className="container-fluid mt-5" style={{ backgroundImage: `url("/dollar2.jpg")`, backgroundSize: 'cover' }}>
+    <div className="container-fluid mt-5" style={{ backgroundImage: `url("/dollar2.jpg")`, backgroundSize: '100% 100%' }}>
     <Head>
       <title>Salary Calculator</title>
       <link
@@ -106,7 +106,7 @@ export default function Home() {
             Increase in Value in PKR: <span id="increaseInValueResult">{increaseInValueResult}</span>
           </p>
         </div>
-        <div className="signatures mt-4 text-center">
+        <div className="signatures mt-4 text-center text-white font-weight-bold">
           <p>Powered by Ammar and Awais</p>
         </div>
       </div>
