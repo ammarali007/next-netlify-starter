@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import { useState } from 'react';
-import mypic from '../public/dollar.jpg'
 
 export default function Home() {
   const [currentSalary, setCurrentSalary] = useState('');
@@ -51,7 +50,7 @@ export default function Home() {
   };
 
   return (
-    <div className="container-fluid mt-5" style={{ backgroundImage: `url("/dollar.jpg")`, backgroundSize: 'cover' }}>
+    <div className="container-fluid mt-5" style={{ backgroundImage: `url("/dollar2.jpg")`, backgroundSize: 'cover' }}>
     <Head>
       <title>Salary Calculator</title>
       <link
@@ -107,7 +106,7 @@ export default function Home() {
             Increase in Value in PKR: <span id="increaseInValueResult">{increaseInValueResult}</span>
           </p>
         </div>
-        <div className="signatures mt-4 text-right">
+        <div className="signatures mt-4 text-center">
           <p>Powered by Ammar and Awais</p>
         </div>
       </div>
