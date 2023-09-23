@@ -50,7 +50,7 @@ export default function Home() {
   };
 
   return (
-    <div className="container-fluid mt-5" style={{ backgroundImage: `url("/images.jpg")`, backgroundSize: '100% 100%' }}>
+    <div className="container-fluid mt-5" style={{ backgroundImage: `url("/dollar3.jpg")`, backgroundSize: '100% 100%' }}>
     <Head>
       <title>Salary Calculator</title>
       <link
