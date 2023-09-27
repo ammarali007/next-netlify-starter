@@ -33,3 +33,148 @@ code {
   justify-content: center;
   align-items: center;
 }
+/* Update the background color of the container */
+.container-fluid {
+  background-color: #f0f0f0; /* Replace with your desired background color */
+}
+
+/* Style the header */
+h1 {
+  color: #333; /* Text color */
+}
+
+/* Style the form labels */
+.form-group label {
+  color: #333; /* Text color */
+  font-weight: bold;
+}
+
+/* Style the form inputs */
+.form-control {
+  border: 2px solid #ccc; /* Border color */
+  border-radius: 4px;
+}
+
+/* Style the Calculate button */
+.btn-primary {
+  background-color: #007bff; /* Button color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style the results section */
+.result {
+  background-color: #fff; /* Background color */
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+}
+
+/* Style the Exchange Rates table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc; /* Table border color */
+}
+
+.table th, .table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc; /* Table border color */
+}
+
+/* Style the table header row */
+.table thead {
+  background-color: #007bff; /* Header background color */
+  color: #fff; /* Header text color */
+}
+
+/* Style table rows on hover */
+.table-hover tbody tr:hover {
+  background-color: #f5f5f5; /* Hover background color */
+}
+
+/* Style the signatures section */
+.signatures {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  color: #333; /* Text color */
+}
+
+/* Style the footer */
+.footer {
+  background-color: #333; /* Footer background color */
+  color: #fff; /* Text color */
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Add media queries for responsive design if needed */
+@media (max-width: 768px) {
+  /* Add styles for smaller screens */
+  .container-fluid {
+    padding: 10px;
+  }
+}
+
+/* styles.css */
+/* Style for the result container */
+.result {
+  background-color: #f0f0f0; /* Background color */
+  border: 1px solid #ccc; /* Border style */
+  padding: 10px; /* Padding inside the container */
+  margin-top: 20px; /* Top margin */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Style for the font-weight-bold class */
+.font-weight-bold {
+  font-weight: bold;
+}
+
+/* Style for the <span> elements inside the result container */
+.result p span {
+  color: #007bff; /* Text color */
+  font-weight: bold;
+}
+
+/* Additional styles for specific elements */
+#initialSalaryResult {
+  color: #ff5733; /* Red text color */
+}
+
+#adjustedSalaryResult {
+  color: #28a745; /* Green text color */
+}
+
+#increaseInValueResult {
+  color: #28a745; /* Green text color */
+}
+
+/* styles/styles.css */
+
+/* Hover effect for table rows */
+.table-hover:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+/* Styling for the results and other elements */
+.result {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-primary {
+  color: #007bff;
+}
+
