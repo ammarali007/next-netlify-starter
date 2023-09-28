@@ -207,7 +207,7 @@ export default function Home() {
           </table>
         </div>
         <div className="signatures mt-4 text-center text-white font-weight-bold">
-          <p>Powered by Ammar and Awais</p>
+          <p>Powered by Ammar and Awais </p>
         </div>
       </div>
     </div>
