@@ -2,9 +2,9 @@ import puppeteer from 'puppeteer';
 
 export default async function handler(req, res) {
   try {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
-
+    
     // Navigate to the URL
     await page.goto('https://www.ofx.com/en-au/exchange-rates/usd-to-pkr/');
 
